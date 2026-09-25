@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Introduction to cloud computing, virtualization, and remote database access">
+  <title>Cloud Computing Lab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <nav class="navbar">
+      <h2 class="logo">CloudLab</h2>
+      <button class="menu-button" id="menuButton" aria-label="Open menu">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#sessions">Sessions</a></li>
+        <li><a href="#tools">Tools</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero-content" id="home">
+      <div>
+        <p class="tagline">HANDS-ON CLOUD COMPUTING</p>
+        <h1>Learn Cloud Concepts Through Practice</h1>
+        <p class="hero-text">Explore static website deployment, virtualization, Linux, MySQL, version control, and remote database access.</p>
+        <div class="hero-buttons">
+          <a href="#sessions" class="button primary-button">View Sessions</a>
+          <a href="#tools" class="button secondary-button">Explore Tools</a>
+        </div>
+      </div>
+      <div class="cloud-card">
+        <div class="cloud-icon">☁️</div>
+        <h3>Cloud Deployment Lab</h3>
+        <p>Build, deploy, and connect applications using modern cloud tools.</p>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="section" id="sessions">
+      <div class="section-heading">
+        <p class="tagline">LEARNING ROADMAP</p>
+        <h2>Three Practical Sessions</h2>
+        <p>The course introduces cloud computing through a series of practical deployment and database activities.</p>
+      </div>
+      <div class="session-grid">
+        <article class="session-card"><div class="session-number">01</div><h3>Web &amp; Deployment</h3><p>Create a static website, push it to GitHub, and deploy it using Vercel or Render.</p><span>GitHub · Vercel · Render</span></article>
+        <article class="session-card"><div class="session-number">02</div><h3>Virtualization &amp; Database Setup</h3><p>Use VirtualBox to run Ubuntu or Kali Linux and install MySQL Server inside the virtual machine.</p><span>VirtualBox · Ubuntu · MySQL</span></article>
+        <article class="session-card"><div class="session-number">03</div><h3>Remote Database Access</h3><p>Connect to the MySQL database inside the virtual machine using a graphical client installed on the host computer.</p><span>Workbench · HeidiSQL</span></article>
+      </div>
+    </section>
+
+    <section class="section tools-section" id="tools">
+      <div class="section-heading"><p class="tagline">REQUIRED SOFTWARE</p><h2>Tools Used in the Lab</h2></div>
+      <div class="tools-table-wrapper">
+        <table>
+          <thead><tr><th>Tool</th><th>Purpose</th><th>Category</th></tr></thead>
+          <tbody>
+            <tr><td>Oracle VirtualBox</td><td>Run a Linux virtual machine</td><td>Virtualization</td></tr>
+            <tr><td>GitHub</td><td>Store and manage source code</td><td>Version Control</td></tr>
+            <tr><td>Vercel / Render</td><td>Deploy the static website</td><td>Cloud Hosting</td></tr>
+            <tr><td>MySQL Server</td><td>Store structured application data</td><td>Database</td></tr>
+            <tr><td>MySQL Workbench / HeidiSQL</td><td>Connect to and manage MySQL remotely</td><td>Database Client</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section workflow-section">
+      <div class="section-heading"><p class="tagline">WORKFLOW</p><h2>How the Project Works</h2></div>
+      <div class="workflow">
+        <div class="workflow-step"><div class="step-icon">1</div><h3>Create</h3><p>Build a responsive static website using HTML, CSS, and JavaScript.</p></div>
+        <div class="workflow-line"></div>
+        <div class="workflow-step"><div class="step-icon">2</div><h3>Upload</h3><p>Push the project files to a GitHub repository using Git.</p></div>
+        <div class="workflow-line"></div>
+        <div class="workflow-step"><div class="step-icon">3</div><h3>Deploy</h3><p>Import the GitHub repository into Vercel or Render.</p></div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="contact-content">
+        <p class="tagline">PROJECT STATUS</p><h2>Ready for Cloud Deployment</h2>
+        <p>This website is ready to be uploaded to GitHub and deployed as a live static site.</p>
+        <button class="button primary-button" id="statusButton">Check Deployment Status</button>
+        <p class="status-message" id="statusMessage"></p>
+      </div>
+    </section>
+  </main>
+  <footer><p>© 2026 CloudLab | Cloud Computing Practical Assignment</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
